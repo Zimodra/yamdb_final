@@ -9,7 +9,7 @@ services:
       - ./.env
 
   backend:
-    build: .
+    image: zimodra/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/usr/src/app/backend/static/

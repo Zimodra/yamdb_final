@@ -1,7 +1,7 @@
 # YaMDb
 ## _Проект для сбора отзывов и оценок различных произведений_
 
-![workflow_status](https://github.com/ipodjke/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg?branch=master)
+![workflow_status](https://github.com/Zimodra/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg?branch=master)
 
 Проект YaMDb собирает отзывы  и оценки пользователей на произведения. Произведения делятся на различные категории.
 Сами произведения в YaMDb не хранятся.

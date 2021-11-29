@@ -21,6 +21,8 @@ RUN pip install -r requirements.txt
 COPY ./docker-entrypoint.sh .
 COPY . .
 
+RUN chmod 777 docker-entrypoint.sh
+
 ENTRYPOINT ["/usr/src/app/backend/docker-entrypoint.sh"]
 
 CMD gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000

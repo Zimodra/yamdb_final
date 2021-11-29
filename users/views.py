@@ -22,6 +22,7 @@ class TokenObtainView(APIView):
             ):
                 token = get_token_for_user(user)
                 return Response(token)
+        return Response(status=status.status.HTTP_400_BAD_REQUEST)
 
 
 class ObtainConfirmationCode(APIView):
@@ -44,3 +45,4 @@ class ObtainConfirmationCode(APIView):
                 )
             user.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(status=status.status.HTTP_400_BAD_REQUEST)

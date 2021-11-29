@@ -33,5 +33,4 @@ class UserSerializer(serializers.ModelSerializer):
                     or not request_user.is_superuser
                     or not request_user.is_staff):
                 validated_data.pop('role', None)
-        user = super().update(user, validated_data)
-        return user
+        return super().update(user, validated_data)
